@@ -16,7 +16,8 @@
     text-decoration: none;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100vh;
     background: #0e091b;
@@ -32,14 +33,13 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background: #013178;
     border-radius: 50px;
-
 }
 
 /* header */
-
 header {
     padding: 15px;
     width: 100%;
+    height: 5em;
     position: fixed;
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(10px);
@@ -87,7 +87,8 @@ main {
     margin: auto;
 }
 
-.home>img, .about-me>img {
+.home>img,
+.about-me>img {
     width: 300px;
     margin-top: 30px;
     border-radius: 50%;
@@ -97,7 +98,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 100vh;
 }
 
 .home {
@@ -143,17 +144,21 @@ main {
 .second-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--bglight);
-
+    padding: 4em 0;
 }
 
 .about-me {
     display: flex;
+    justify-content: center;
     max-width: 950px;
-    gap: 100px;    
-    margin: 50px 0px;    
+    gap: 100px;
 }
 
+.about-me img {
+    width: 25%;
+}
 
 .about-me p {
     width: 600px;
@@ -217,10 +222,11 @@ main {
     background: var(--bglight);
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: var(--fontContent);
     flex-direction: column;
     gap: 50px;
-    max-height: 1000px;
+    height: 50vh;
 }
 
 .knowledges h2 {
@@ -231,6 +237,7 @@ main {
 
 .knowledges>div {
     display: flex;
+    align-items: center;
     gap: 70px;
     max-width: 1140px;
     text-align: center;
@@ -241,7 +248,8 @@ main {
     width: 100px;
     margin-bottom: 10px;
 }
-.knowledges picture:last-child img{
+
+.knowledges picture:last-child img {
     border-radius: 50%;
 }
 
@@ -257,9 +265,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 90px 0;
     gap: 50px;
-    max-height: 1000px;
+    height: 50vh;
     text-align: center;
     font-size: 1.5em;
     font-family: var(--fontContent);
@@ -272,6 +281,7 @@ main {
 .contact>div {
     max-width: 1140px;
     display: flex;
+    align-items: center;
     gap: 120px;
 }
 
@@ -289,7 +299,6 @@ main {
 }
 
 /* footer */
-
 footer {
     background: var(--bglight);
     padding: 16px;
@@ -299,13 +308,11 @@ footer {
 }
 
 /* menu */
-
-#toggle{
+#toggle {
     display: none;
 }
 
-
-@media(max-width: 950px) {
+@media(max-width: 960px) {
     * {
         flex-direction: column;
         align-items: center;
@@ -333,7 +340,6 @@ footer {
     }
 
     /* main */
-
     .first-content {
         height: 120vh;
     }
@@ -350,13 +356,19 @@ footer {
         gap: 0;
     }
 
-    .first-content, .second-content {
+    .first-content,
+    .second-content {
         text-align: center;
         margin: 0px 10px;
     }
 
-    .first-content img, .second-content img {
+    .first-content img,
+    .second-content img {
         width: 200px;
+    }
+
+    .second-content {
+        padding: 0 0 20px 0;
     }
 
     .second-content p {
@@ -380,6 +392,8 @@ footer {
     }
 
     .projects div {
+        justify-content: center;
+        flex-direction: row;
         max-width: 100%;
         gap: 30px;
     }
@@ -390,13 +404,13 @@ footer {
 
     .knowledges {
         text-align: center;
-        gap: 10px;
+        gap: 40px;
+        height: 600px;
     }
 
     .knowledges>div {
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
         flex-wrap: wrap;
     }
 
@@ -405,23 +419,29 @@ footer {
     }
 
     .contact {
-        gap: 10px;
+        gap: 40px;
+        height: 500px;
     }
 
     .contact>div {
-        gap: 10px;
+        gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .contact img {
         min-width: 50%;
     }
+
     /* menu */
-    .checkbox-container{
+    .checkbox-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .checkbox{
+
+    .checkbox {
         position: absolute;
         top: 0;
         right: 0;
@@ -433,7 +453,8 @@ footer {
         z-index: 9999;
         transition: 400ms ease-in-out 0s;
     }
-    .checkbox .trace{
+
+    .checkbox .trace {
         width: 50px;
         height: 2px;
         background: white;
@@ -441,23 +462,27 @@ footer {
         border-radius: 4px;
         transition: 0.5s ease-in-out;
     }
-    
-    .checkbox .trace:nth-child(1){
+
+    .checkbox .trace:nth-child(1) {
         top: 26px;
         transform: rotate(0);
     }
-    .checkbox .trace:nth-child(2){
+
+    .checkbox .trace:nth-child(2) {
         top: 46px;
         transform: rotate(0);
     }
-    .checkbox .trace:nth-child(3){
+
+    .checkbox .trace:nth-child(3) {
         top: 66px;
         transform: rotate(0);
     }
-    #toggle{
+
+    #toggle {
         display: none;
     }
-    .menu{
+
+    .menu {
         position: absolute;
         top: 28px;
         right: 30px;
@@ -469,7 +494,8 @@ footer {
         z-index: -1;
         transition: 400ms ease-in-out 0s;
     }
-    .menu-items{
+
+    .menu-items {
         position: fixed;
         top: 0;
         left: 0;
@@ -481,12 +507,14 @@ footer {
         z-index: 2;
         opacity: 0;
         visibility: hidden;
-        transition: 0.1ms ease-out 350ms; 
+        transition: 0.1ms ease-out 350ms;
     }
+
     .menu-items a {
         display: none;
     }
-    nav a{
+
+    nav a {
         margin: 10px 0;
         color: var(--colorContent);
         text-decoration: none;
@@ -494,42 +522,51 @@ footer {
         letter-spacing: 4px;
         font-size: 2em;
     }
-    #toggle:checked + .checkbox .trace:nth-child(1){
+
+    #toggle:checked+.checkbox .trace:nth-child(1) {
         transform: rotate(45deg);
         background: white;
         top: 47px;
     }
-    #toggle:checked + .checkbox .trace:nth-child(2){
+
+    #toggle:checked+.checkbox .trace:nth-child(2) {
         transform: translateX(-100px);
         visibility: hidden;
         opacity: 0;
         width: 30px;
     }
-    #toggle:checked + .checkbox .trace:nth-child(3){
+
+    #toggle:checked+.checkbox .trace:nth-child(3) {
         transform: rotate(-45deg);
         background: white;
         top: 47px;
     }
-    #toggle:checked + .checkbox{
+
+    #toggle:checked+.checkbox {
         background: black;
     }
-    #toggle:checked ~ .menu{
+
+    #toggle:checked~.menu {
         box-shadow: 0px 0px 0px 100vmax black;
         z-index: 1;
     }
-    #toggle:checked ~ .menu-items{
+
+    #toggle:checked~.menu-items {
         visibility: visible;
         opacity: 1;
     }
-    #toggle:checked ~ .menu-items a{
+
+    #toggle:checked~.menu-items a {
         display: unset;
     }
 }
-@media(max-width: 320px) and (height: 480px){
-    nav a{
+
+@media(max-width: 320px) and (height: 480px) {
+    nav a {
         font-size: 1.3em;
     }
-    .first-content{
+
+    .first-content {
         height: 130vh;
     }
 }
