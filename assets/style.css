@@ -87,8 +87,10 @@ main {
     margin: auto;
 }
 
-.home>img,
-.about-me>img {
+
+
+.home>img, .about-me>img {
+
     width: 300px;
     margin-top: 30px;
     border-radius: 50%;
@@ -154,6 +156,12 @@ main {
     justify-content: center;
     max-width: 950px;
     gap: 100px;
+
+}
+
+.about-me img {
+    width: 25%;
+
 }
 
 .about-me img {
@@ -242,6 +250,7 @@ main {
     max-width: 1140px;
     text-align: center;
     margin-bottom: 50px;
+
 }
 
 .knowledges img {
@@ -272,6 +281,7 @@ main {
     text-align: center;
     font-size: 1.5em;
     font-family: var(--fontContent);
+
 }
 
 .contact>h2 {
@@ -283,6 +293,7 @@ main {
     display: flex;
     align-items: center;
     gap: 120px;
+
 }
 
 .contact a {
@@ -312,7 +323,7 @@ footer {
     display: none;
 }
 
-@media(max-width: 960px) {
+ @media(max-width: 960px) {
     * {
         flex-direction: column;
         align-items: center;
@@ -371,6 +382,10 @@ footer {
         padding: 0 0 20px 0;
     }
 
+    .second-content {
+        padding: 0 0 20px 0;
+    }
+
     .second-content p {
         margin: auto;
         width: 80%;
@@ -399,19 +414,20 @@ footer {
     }
 
     .projects {
+
         gap: 30px;
     }
 
     .knowledges {
         text-align: center;
         gap: 40px;
-        height: 600px;
+         height: 600px;
     }
 
     .knowledges>div {
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;
+         flex-wrap: wrap;
     }
 
     .knowledges img {
