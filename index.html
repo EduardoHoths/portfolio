@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
-    <title></title>
+    <meta name="description" content="My name is Eduardo and I'm studying front-end technologies.">
+    <link rel="shortcut icon" href="assets/img/programming.png" type="image/x-icon">
+    <title>Portfolio | Eduardo Hoths - Front-end Developer</title>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div class="checkbox-container">
             <img src="https://cdn.discordapp.com/attachments/920032936823238658/920037337814155304/a9a891545fd9a5717408df2ff8891096.gif"
                 alt="">
-            <input type="checkbox" name="" id="toggle">
+            <input type="checkbox"  id="toggle">
             <label for="toggle" class="checkbox">
                 <div class="trace"></div>
                 <div class="trace"></div>
@@ -22,10 +24,10 @@
             </label>
             <div class="menu"></div>
             <nav class="menu-items">
-                <a href="#">About me</a>
-                <a href="#">Projects</a>
-                <a href="#">Knowledges</a>
-                <a href="#">Contact</a>
+                <a href="#aboutme">About me</a>
+                <a href="#projects">Projects</a>
+                <a href="#knowledges">Knowledges</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -40,8 +42,8 @@
                 <img src="assets/img/profile-pic (1).png" alt="">
             </div>
         </section>
-        <section class="second-content">
-            <div class="about-me">
+        <section class="second-content" id="aboutme">
+            <div class="about-me" >
                 <img src="assets/img/download (1).png" alt="">
                 <div>
                     <h3>About me</h3>
@@ -50,7 +52,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <div>
                 <a href="https://eduardohoths.github.io/Projetos-Pessoais/calculator/" target="_blank">
@@ -79,7 +81,7 @@
                 </a>
             </div>
         </section>
-        <section class="knowledges">
+        <section class="knowledges" id="knowledges">
             <h2>Knowledges</h2>
             <div>
                 <picture>
@@ -104,7 +106,7 @@
                 </picture>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Find me</h2>
             <div>
                 <a href="//eduardo.hoths@gmail.com" target="_blank">
