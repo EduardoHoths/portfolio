@@ -1,6 +1,20 @@
 const menuItems = document.querySelectorAll('.menu-items a[href^="#"]');
 const checkbox = document.querySelector('#toggle')
 
+const label = document.querySelectorAll('[id*=label]')
+
+label.forEach(item => item.addEventListener('click', event =>{
+   label.forEach(item => {
+       if(item.classList == 'active'){
+           item.classList.remove('active')
+           console.log('ativo');
+       }
+       event.target.classList.add('active')
+   })   
+}))
+
+console.log(label);
+
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
 })

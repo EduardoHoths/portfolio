@@ -187,20 +187,112 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    
     margin: 80px 0;
+    height: 60vh;
+
+    position: relative;
 }
 
-.projects>div {
-    width: 700px;
-    max-width: 1140px;
+.content {
+    height: 50vh;
+    width: 40vw;
+    overflow: hidden;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+.slides {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    text-align: center;
-    font-family: var(--fontContent);
+    width: 700%;
+    height: 100%;
 }
 
+.slides input {
+    display: none;
+}
+.slide{
+    width: 15%;    
+    transition: 0.8s;
+    position: relative;
+}
+
+.slide a img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide a .caption {
+    width: 300px;
+    height: 25px;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.589);
+    font-size: 1.5em;
+    border-radius: 20px;
+
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+.active{
+    background: rgba(0, 0, 0, 0.589);
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -15%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -30%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -45%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide6:checked ~ .s1{
+    margin-left: -75%;
+}
+#slide7:checked ~ .s1{
+    margin-left: -90%;
+}
+
+
+.nav-carousel{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content label{
+    width: 11%;
+    height: 17px;
+    border: 2px solid black;
+    
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.content label:hover{
+    background: rgba(0, 0, 0, 0.575);
+}
 .projects a {
     color: var(--colorContent);
     transition: all 0.5s;
@@ -211,12 +303,6 @@ main {
     font-family: var(--fontTitle);
 }
 
-.projects img {
-    width: 200px;
-    height: 200px;
-    border: 0.4px solid;
-    border-radius: 10px;
-}
 
 .projects a:hover {
     transform: scale(1.1);
@@ -250,20 +336,21 @@ main {
 
 .knowledges img {
     width: 100px;
+    height: 100px;
     margin-bottom: 10px;
-}
-
-.knowledges picture:last-child img {
-    border-radius: 50%;
-}
-
-.knowledges picture {
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .knowledges picture:hover {
     transform: scale(1.3);
 }
+
+
+
+.knowledges picture {
+    transition: 0.6s;
+}
+
 
 .contact {
     display: flex;
@@ -316,12 +403,14 @@ footer {
     display: none;
 }
 
-@media(max-width: 960px) {
-    * {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1440px){
+    .content{
+        width: 60vw;
     }
+}
 
+@media(max-width: 960px) {
+    
     /* header */
     header .checkbox-container {
         flex-direction: row;
@@ -334,7 +423,7 @@ footer {
         height: 50px;
     }
 
-    nav {
+    header nav {
         flex-direction: column;
         gap: 5px;
     }
@@ -346,6 +435,7 @@ footer {
     /* main */
     .first-content {
         height: 120vh;
+
     }
 
     .first-content h1 {
@@ -358,6 +448,8 @@ footer {
 
     .home {
         gap: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     .first-content,
@@ -387,6 +479,7 @@ footer {
 
     .about-me {
         align-items: center;
+        flex-direction: column;
         gap: 0;
         font-size: 1em;
     }
@@ -395,19 +488,11 @@ footer {
         text-align: center;
     }
 
-    .projects img {
-        min-width: 50%;
+    .content{
+        width: 90vw;
     }
-
-    .projects div {
-        justify-content: center;
-        flex-direction: row;
-        max-width: 100%;
-        gap: 30px;
-    }
-
-    .projects {
-        gap: 30px;
+    .content label{
+        height: 20px;
     }
 
     .knowledges {
