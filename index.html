@@ -5,8 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <meta
+      name="keywords"
+      content="sites, site, web, desenvolvimento, developer, frontend, eduardohoths, eduardo hoths, programador, front-end, freelancer, freela, website, portfólio, portfolio"
+    />
+    <meta name="copyright" content="eduardohoths"/>
+    <meta property="og:image" content="https://eduardohoths.github.io/portfolio/assets/img/preview.png">
+    <meta
+      property="og:title"
+      content="Eduardo Hoths - Front-end Developer"
+    />
+    <meta
+      property="og:description"
+      content="Front-end developer"
+    />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <meta name="description" content="My name is Eduardo and I'm studying front-end technologies.">
+
+    <!-- My css-->
+    <link rel="stylesheet" href="assets/style/style.css">
+
     <link rel="shortcut icon" href="assets/img/programming.png" type="image/x-icon">
     <title>Portfolio | Eduardo Hoths - Front-end Developer</title>
 </head>
@@ -36,103 +66,102 @@
                 <div>
                     <h1>Hello World! <br> I'm Eduardo Hoths</h1>
                     <h2>Front-end developer.</h2>
-                    <a href="https://github.com/eduardohoths" target="_blank" class="btn">Github</a>
+                    <a href="https://github.com/eduardohoths" target="_blank" class="myBtn">Github</a>
                 </div>
-                <img src="assets/img/profile-pic (1).png" alt="Eduardo Image">
+                <img src="assets/img/profile-pic.png" alt="Eduardo Image">
             </div>
         </section>
         <section class="second-content" id="aboutme">
             <div class="about-me">
-                <img src="assets/img/download (1).png" alt="Avatar Image">
+                <img src="assets/img/avatar.png" alt="Avatar Image">
                 <div>
                     <h3>About me</h3>
-                    <p>My name is Eduardo and I am 20 years old. I'm a foreign trade student and currently also studying
-                        front-end technologies.</p>
+                    <p>My name is Eduardo and I am 20 years old. I love creating things and always acquiring new knowledge.</p>
                 </div>
             </div>
         </section>
         <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <div class="content">
-                <div class="slides">
-
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-                    <input type="radio" name="slide" id="slide4">
-                    <input type="radio" name="slide" id="slide5">
-                    <input type="radio" name="slide" id="slide6">
-                    <input type="radio" name="slide" id="slide7">
-
-                    <div class="slide s1">
-                        <a href="https://eduardohoths.github.io/Projetos-Pessoais/calculator/" target="_blank">
-                            <img src="assets/img/calculator.PNG" alt="Calculator Image">
-                            <div class="caption">
-                                <p>Calculator</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://eduardohoths.github.io/Digital-Innovation-One/projeto-dark-mode/" target="_blank">
-                            <img src="assets/img/dark-mode.PNG" alt="Web site Dark mode Image">
-                            <div class="caption">
-                                <p>Website with dark mode</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div id="myPortfolio" class="carousel slide" data-ride="carousel">
+               
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
                         <a href="https://eduardohoths.github.io/Projetos-Pessoais/parallax-top-animes/" target="_blank">
-                            <img src="assets/img/my-top-animes.PNG" alt="Top animes Image">
-                            <div class="caption">
-                                <p>My top 5 animes</p>
-                            </div>
+                            <img src="assets/img/top-animes.png" alt="Top animes Image">
                         </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>My top 5 animes</h5>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <a href="https://eduardohoths.github.io/cursoemvideo/Projetos/projeto-site-android/"
-                            target="_blank">
-                            <img src="assets/img/Android.PNG" alt="Android History Image">
-                            <div class="caption">
-                                <p>Android mascot history</p>
-                            </div>
+                    <div class="carousel-item">
+                        <a href="https://eduardohoths.github.io/Projetos-Pessoais/calculator/" target="_blank">
+                            <img src="assets/img/calculator.png" alt="Calculator Image">
+                        </a>                        
+                        <div class="carousel-caption d-md-block">
+                            <h5>Calculator</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <a href="https://eduardohoths.github.io/cursoemvideo/Projetos/projeto-site-android/">
+                            <img src="assets/img/android-history.png" alt="Android History Image">
                         </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>Android mascot history</h5>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <a href="https://eduardohoths.github.io/cursoemvideo/Projetos/projeto-cordel/" target="_blank">
-                            <img src="assets/img/cordel-moderno.PNG" alt="Project Cordel Image">
-                            <div class="caption">
-                                <p>Website with parallax effect</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="https://eduardohoths.github.io/Digital-Innovation-One/projeto-jogo-da-velha/"
-                            target="_blank">
-                            <img src="assets/img/tic-tac-toe.PNG" alt="Tic Tac Toe Image">
-                            <div class="caption">
-                                <p>Tic Tac Toe</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
+                    <div class="carousel-item">
                         <a href="https://eduardohoths.github.io/Projetos-Pessoais/todo-list/">
-                            <img src="assets/img/todo-list.PNG" alt="">
-                            <div class="caption">
-                                <p>To do List</p>
-                            </div>
+                            <img src="assets/img/todo-list.png">
                         </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>To do List</h5>
+                        </div>
                     </div>
-                </div>
+                    <div class="carousel-item">
+                        <a href="https://eduardohoths.github.io/front-end-mentor/junior-level/time-tracking-dashboard-main/"
+                            target="_blank">
+                            <img src="assets/img/dashboard.png" alt="">
+                        </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>Dashboard</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://eduardohoths.github.io/Projetos-Pessoais/spotify-clone/" target="_blank">
+                            <img src="assets/img/spotify-clone.png" alt="">
+                        </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>Spotify Clone</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://eduardohoths.github.io/Projetos-Pessoais/app-orcamento-pessoal/"
+                            target="_blank">
+                            <img src="assets/img/app-orcamento-pessoal.png" alt="">
+                        </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>App Personal Budget</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://eduardohoths.github.io/Projetos-Pessoais/mata-mosquito/" target="_blank">
+                            <img src="assets/img/mata-mosquito.png" alt="">
+                        </a>
+                        <div class="carousel-caption d-md-block">
+                            <h5>Game Kill Mosquito</h5>
+                        </div>
+                    </div>
 
-                <nav class="nav-carousel">
-                    <label for="slide1" class="active" id="label1"></label>
-                    <label for="slide2" id="label2"></label>
-                    <label for="slide3" id="label3"></label>
-                    <label for="slide4" id="label4"></label>
-                    <label for="slide5" id="label5"></label>
-                    <label for="slide6" id="label6"></label>
-                    <label for="slide7" id="label7"></label>
-                </nav>
+                </div>
+                <a class="carousel-control-prev" href="#myPortfolio" role="button" data-slide="prev">
+                    <ion-icon name="caret-back" size="large"></ion-icon>
+                </a>
+                <a class="carousel-control-next" href="#myPortfolio" role="button" data-slide="next">
+                    <ion-icon name="caret-forward" size="large"></ion-icon>
+                </a>
             </div>
         </section>
         <section class="knowledges" id="knowledges">
@@ -162,6 +191,10 @@
                     <img src="assets/img/sass.png" alt="">
                     <p>SASS</p>
                 </picture>
+                <picture>
+                    <img src="assets/img/bootstrap.png" alt="">
+                    <p>Bootstrap</p>
+                </picture>
             </div>
         </section>
         <section class="contact" id="contact">
@@ -185,8 +218,9 @@
     <footer>
         <p>&copy; Eduardo Hoths</p>
     </footer>
-    <script src="assets/script.js"></script>
-    <script src="https://kit.fontawesome.com/215fd60249.js" crossorigin="anonymous"></script>
+    <script src="assets/script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
