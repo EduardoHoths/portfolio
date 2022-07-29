@@ -5,7 +5,7 @@ import menu from "../assets/menu.svg";
 
 import { X } from "phosphor-react";
 
-import { Link, animateScroll} from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 
 export function Header() {
   const [mobile, setMobile] = useState(false);
@@ -53,14 +53,14 @@ export function Header() {
     setHeaderActive(window.scrollY > 0);
   }
 
-  function scrollToTop(){
+  function scrollToTop() {
     animateScroll.scrollToTop();
   }
 
   return (
     <header className={headerActive ? styles.headerActive : styles.header}>
       <div>
-          <strong onClick={scrollToTop}>Portfólio</strong>
+        <strong onClick={scrollToTop}>Portfólio</strong>
 
         {mobile ? (
           <>
@@ -71,32 +71,56 @@ export function Header() {
             <img src={menu} alt="" className={styles.menuIcon} onClick={openMenuMobile} />
             <nav className={menuActive ? styles.menuMobileActive : styles.menuMobile}>
               <X className={styles.closeIcon} onClick={closeMenuMobile} />
-              <Link smooth={true} offset={-90} to="about-me" href="/" onClick={closeMenuMobile}>
+              <Link
+                smooth={true}
+                offset={headerActive ? -90 : -150}
+                to="about-me"
+                href="/"
+                onClick={closeMenuMobile}
+              >
                 Sobre mim
               </Link>
-              <Link smooth={true} offset={-90} to="projects" href="/" onClick={closeMenuMobile}>
+              <Link
+                smooth={true}
+                offset={headerActive ? -90 : -150}
+                to="projects"
+                href="/"
+                onClick={closeMenuMobile}
+              >
                 Projetos
               </Link>
-              <Link smooth={true} offset={-90} to="services" href="/" onClick={closeMenuMobile}>
+              <Link
+                smooth={true}
+                offset={headerActive ? -90 : -150}
+                to="services"
+                href="/"
+                onClick={closeMenuMobile}
+              >
                 Serviços
               </Link>
-              <Link smooth={true} offset={-90} to="skills" href="/" onClick={closeMenuMobile}>
+              <Link
+                smooth={true}
+                offset={headerActive ? -90 : -150}
+                to="skills"
+                href="/"
+                onClick={closeMenuMobile}
+              >
                 Minhas skills
               </Link>
             </nav>
           </>
         ) : (
           <nav>
-            <Link smooth={true} offset={-130} to="about-me" href="/">
+            <Link smooth={true} offset={headerActive ? -130 : -220} to="about-me" href="/">
               Sobre mim
             </Link>
-            <Link smooth={true} offset={-130} to="projects" href="/">
+            <Link smooth={true} offset={headerActive ? -130 : -220} to="projects" href="/">
               Projetos
             </Link>
-            <Link smooth={true} offset={-130} to="services" href="/">
+            <Link smooth={true} offset={headerActive ? -130 : -220} to="services" href="/">
               Serviços
             </Link>
-            <Link smooth={true} offset={-130} to="skills" href="/">
+            <Link smooth={true} offset={headerActive ? -130 : -220} to="skills" href="/">
               Minhas skills
             </Link>
           </nav>
