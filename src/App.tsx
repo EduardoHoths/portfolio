@@ -18,14 +18,14 @@ function App() {
       <main className={styles.main}>
         <section className={styles["first-section"]}>
           <div>
-            <strong>
-              Olá, eu sou o
-              Eduardo Hoths :)
-            </strong>
+            <strong>Olá, eu sou o Eduardo Hoths :)</strong>
 
             <span>Desenvolvedor Front-end</span>
 
-            <a href="./assets/profile.pdf" download="profile.pdf">
+            <a
+              href="https://github.com/EduardoHoths/portfolio/raw/master/src/assets/profile.pdf"
+              download="profile.pdf"
+            >
               Download CV
             </a>
             <a href="https://www.linkedin.com/in/eduardohoths/" target="_blank">
