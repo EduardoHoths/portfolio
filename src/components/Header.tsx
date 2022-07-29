@@ -8,7 +8,7 @@ import { X } from "phosphor-react";
 import { Link, animateScroll } from "react-scroll";
 
 export function Header() {
-  const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(window.innerWidth < 768);
   const [menuActive, setMenuActive] = useState(false);
   const [headerActive, setHeaderActive] = useState(false);
 
