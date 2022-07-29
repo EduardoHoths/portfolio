@@ -1,0 +1,67 @@
+.about-me {
+  text-align: center;
+  margin-bottom: 7.938rem;
+
+  > p {
+    font-size: 1.125rem;
+    line-height: 32px;
+    color: var(--gray);
+    max-width: 46.563rem;
+    margin: 0 auto;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.75rem;
+    margin-top: 5.313rem;
+    flex-wrap: wrap;
+  }
+}
+.contact {
+  width: 200px;
+
+  &:hover span:first-child {
+    border: 1px solid var(--blue);
+  }
+  span:first-child {
+    display: inline-block;
+    padding: 0.938rem;
+    line-height: 0;
+    border: 1px solid transparent;
+
+    transition: 0.2s;
+    background-color: var(--gray-400);
+    border-radius: 50%;
+  }
+
+  strong {
+    display: block;
+    font-weight: 700;
+    font-size: 1.125rem;
+
+    margin-top: 1.188rem;
+    margin-bottom: 0.313rem;
+  }
+
+  span:last-child {
+    color: var(--gray);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    margin-bottom: 3.5rem;
+
+    > p {
+      font-size: 1rem;
+      line-height: 19.6px;
+    }
+    > div{
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+  }
+  
+}

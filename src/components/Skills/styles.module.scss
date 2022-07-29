@@ -1,0 +1,70 @@
+.skills {
+  text-align: center;
+
+  margin-bottom: 11.563rem;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    gap: 3.188rem;
+  }
+}
+
+.skill {
+  padding: 2.188rem;
+  background-color: var(--gray-400);
+  border: 1px solid var(--gray-200);
+
+  width: 150px;
+  height: 150px;
+
+  position: relative;
+
+  transition: 0.2s;
+  
+  &:hover {
+    border: 1px solid var(--blue);
+
+    span{
+      display: inline;
+    }
+  }
+
+  span{
+    display: none;
+    background-color: var(--gray-400);
+    padding: 5px;
+
+    width: fit-content;
+
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .skills{
+    margin-bottom: 3.5rem;
+
+    
+  }
+  .skill{
+    width: 90px;
+    height: 90px;
+
+    padding: 1.313rem;
+
+    img{
+      width: 48px;
+      height: 48px;
+    }
+    span{
+      font-size: 0.80rem;
+    }
+  }
+}
