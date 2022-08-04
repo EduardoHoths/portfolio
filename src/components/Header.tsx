@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "../styles/Header.module.scss";
 
 import menu from "../assets/menu.svg";
@@ -11,6 +11,7 @@ export function Header() {
   const [mobile, setMobile] = useState(window.innerWidth < 768);
   const [menuActive, setMenuActive] = useState(false);
   const [headerActive, setHeaderActive] = useState(false);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -69,7 +70,7 @@ export function Header() {
               onClick={closeMenuMobile}
             ></div>
             <img src={menu} alt="" className={styles.menuIcon} onClick={openMenuMobile} />
-            <nav className={menuActive ? styles.menuMobileActive : styles.menuMobile}>
+            <nav className={menuActive ? styles.menuMobileActive : styles.menuMobile} >
               <X className={styles.closeIcon} onClick={closeMenuMobile} />
               <Link
                 smooth={true}
@@ -111,7 +112,7 @@ export function Header() {
           </>
         ) : (
           <nav>
-            <Link smooth={true} offset={headerActive ? -130 : -220} to="about-me" href="/">
+            <Link duration={1}  smooth={true} offset={headerActive ? -130 : -220} to="about-me" href="/">
               Sobre mim
             </Link>
             <Link smooth={true} offset={headerActive ? -130 : -220} to="projects" href="/">
