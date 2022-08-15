@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 import todoApp from "../../assets/todoapp.png";
 import dogs from "../../assets/dogs.png";
 import eCommerce from "../../assets/e-commerce.png";
-import dashboard from "../../assets/dashboard.png";
+import naped from "../../assets/naped.png";
 import chihiro from "../../assets/chihiro.png";
 import spotify from "../../assets/spotify.png";
 
@@ -13,6 +13,12 @@ const projects = [
     tecnologies: ["React", "Typescript", "NodeJS", "Express", "JWT", "Bcrypt", "Mysql"],
     image: todoApp,
     link: "https://front-end-todo-app.vercel.app/",
+  },
+  {
+    title: "Naped",
+    tecnologies: ["React", "Typescript", "Styled Components", "MirageJS"],
+    image: naped,
+    link: "https://desafio-10-naped.vercel.app/",
   },
   {
     title: "Dogs",
@@ -26,12 +32,7 @@ const projects = [
     image: eCommerce,
     link: "https://eduardohoths.github.io/Projetos-Pessoais/e-commerce/",
   },
-  {
-    title: "Time Tracking Dashboard",
-    tecnologies: ["HTML", "SASS", "JS"],
-    image: dashboard,
-    link: "https://eduardohoths.github.io/front-end-mentor/junior-level/time-tracking-dashboard-main/",
-  },
+
   {
     title: "A Viagem de Chihiro",
     tecnologies: ["React", "SASS"],
