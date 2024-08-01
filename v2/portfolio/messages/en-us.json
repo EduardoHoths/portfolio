@@ -1,0 +1,23 @@
+{
+  "Home": {
+    "language": "English",
+    "role": "Full-Stack Developer.",
+    "location": "Itaquaquecetuba, São Paulo - Brazil",
+    "about": {
+      "title": "About me",
+      "text": "Hello! I’m Eduardo Hoths, a fullstack developer with expertise in web development. I work as a Systems Analyst, providing technical support, integrating systems, and developing RPA solutions. Currently, I am focused on maintaining our website and developing new pages, as well as working on a truck checklist app. I also have experience in data analysis, configuring Docker environments, and computer maintenance."
+    },
+    "skills": "Skills",
+    "projects": "Projetos"
+  },
+  "LanguageSelector": {
+    "pt-br": "Portuguese",
+    "en-us": "English",
+    "jp": "Japanese"
+  },
+  "Theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  }
+}
