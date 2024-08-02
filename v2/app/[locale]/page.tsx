@@ -1,5 +1,12 @@
 import { experiences, projects, skills } from "@/assets/data";
-import { Github, LinkedinIcon, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Download,
+  Github,
+  LinkedinIcon,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,10 +56,21 @@ export default function HomePage() {
                 <Phone size={20} />
               </Link>
             </div>
+
+            <div className="w-[176px]">
+              <a
+                href={`/cv/Currículo - Eduardo Hoths (${locale}).pdf`}
+                download={`Currículo - Eduardo Hoths (${locale}).pdf`}
+                className="mt-2 border dark:border-gray-700 w-full py-2 rounded bg-gray-800 text-white flex gap-1 items-center justify-center"
+              >
+                {t("resume")}
+                <Download size={16} />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div>
+        <div className="hidden sm:block">
           <Image
             src={"https://avatars.githubusercontent.com/u/94751445?v=4"}
             width={150}
@@ -89,8 +107,11 @@ export default function HomePage() {
               </div>
 
               <div className="text-sm">
-                <span className="font-bold">{experience.role}</span> •{" "}
-                {experience.location}
+                <span className="font-bold">{experience.role}</span>
+                <span className="dark:text-gray-500">
+                  {" "}
+                  • {experience.location}
+                </span>
               </div>
 
               <div className="text-xs text-gray-500">{experience.date}</div>
@@ -127,10 +148,12 @@ export default function HomePage() {
               key={project.name}
               className="border dark:border-gray-800 rounded p-4 mt-2 flex flex-col gap-2"
             >
-              <div className="flex gap-1 items-center">
-                <h3>{project.name}</h3> •{" "}
-                <span className="text-gray-500 text-sm">{project.company}</span>
-              </div>
+              <h3>
+                {project.name}{" "}
+                <span className="text-gray-500 text-sm">
+                  • {project.company}
+                </span>
+              </h3>
 
               <div className="text-sm text-gray-400">
                 <p>{project.description}</p>
@@ -144,7 +167,7 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
