@@ -25,7 +25,7 @@ export const experiences = {
       },
       {
         role: "Desenvolvedor Front-end",
-        date: "Março, 2022 - Julho, 2023",
+        date: "Março, 2022 - Julho, 2022",
         description:
           "No Tictur, prestei serviços de manutenção e desenvolvimento de novas páginas no dashboard da plataforma. Utilizei HTML, CSS, JavaScript e PHP, além de integrar e consumir APIs para aprimorar a funcionalidade e a experiência do usuário e administradores.",
         url: "https://tictur.com.br/",
@@ -60,7 +60,7 @@ export const experiences = {
       },
       {
         role: "フロントエンドデベロッパー",
-        date: "2022年3月 - 2023年7月",
+        date: "2022年3月 - 2022年7月",
         description:
           "Ticturでは、プラットフォームのダッシュボードでの新しいページのメンテナンスと開発を担当しました。HTML、CSS、JavaScript、PHPを使用し、機能とユーザーおよび管理者の体験を向上させるためにAPIを統合し、消費しました。",
         url: "https://tictur.com.br/",
@@ -95,7 +95,7 @@ export const experiences = {
       },
       {
         role: "Front-end Developer",
-        date: "March 2022 - July 2023",
+        date: "March 2022 - July 2022",
         description:
           "At Tictur, I provided maintenance and development services for new pages on the platform dashboard. I used HTML, CSS, JavaScript, and PHP, and integrated and consumed APIs to enhance functionality and user and admin experience.",
         url: "https://tictur.com.br/",
