@@ -9,7 +9,13 @@
     },
     "skills": "スキル",
     "projects": "Projetos",
-    "resume": "履歴書をダウンロード"
+    "resume": "履歴書をダウンロード",
+    "education": {
+      "title": "教育",
+      "university": "UniCV - Centro Universitário CIDADE VERDE",
+      "duration": "2024 - 2026",
+      "course": "システム分析と開発"
+    }
   },
   "LanguageSelector": {
     "pt-br": "ポルトガル語",

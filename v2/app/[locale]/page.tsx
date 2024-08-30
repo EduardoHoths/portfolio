@@ -87,6 +87,7 @@ export default function HomePage() {
 
       <section>
         <h2>{experiences[locale].title}</h2>
+
         <div className="flex flex-col gap-4 mt-2">
           {experiences[locale].data.map((experience) => (
             <div
@@ -101,6 +102,7 @@ export default function HomePage() {
                 >
                   <h3 className="font-normal">{experience.company}</h3>
                 </Link>
+
                 <span className="text-xs border dark:border-gray-700 py-1 px-4 rounded">
                   {experience.modality}
                 </span>
@@ -121,6 +123,18 @@ export default function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section>
+        <h2>{t("education.title")}</h2>
+
+        <div className="flex flex-col gap-1 border dark:border-gray-800 rounded p-4 text-sm mt-2">
+          <span className="font-bold">{t("education.university")}</span>
+
+          <p className="text-gray-500 ">{t("education.duration")}</p>
+
+          <p className="text-gray-400">{t("education.course")}</p>
         </div>
       </section>
 

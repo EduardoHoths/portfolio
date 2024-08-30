@@ -9,7 +9,13 @@
     },
     "skills": "Skills",
     "projects": "Projetos",
-    "resume": "Download resume"
+    "resume": "Download resume",
+    "education": {
+      "title": "Education",
+      "university": "UniCV - Centro Universitário CIDADE VERDE",
+      "duration": "2024 - 2026",
+      "course": "Systems Analysis and Development"
+    }
   },
   "LanguageSelector": {
     "pt-br": "Portuguese",

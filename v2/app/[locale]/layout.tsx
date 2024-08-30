@@ -6,7 +6,6 @@ import { getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Metadata } from "next";
-import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
