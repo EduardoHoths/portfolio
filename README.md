@@ -4,11 +4,11 @@ Bem-vindo ao repositório do meu portfólio! Sou Eduardo Hoths, desenvolvedor Fu
 ## Sobre Mim
 Atualmente trabalho como Analista de Sistemas Pleno, oferecendo suporte técnico, integrando sistemas e desenvolvendo soluções de automação (RPA). Tenho experiência com desenvolvimento front-end e back-end, além de análise de dados e automação de processos. Alguns dos frameworks e ferramentas que utilizo regularmente incluem:
 
-Next.js | Node.js | React | TypeScript
-Tailwind | SASS | Styled Components
-MongoDB | SQL
-Python | Selenium | Pandas
-Docker | GitHub Actions
+Next.js | Node.js | React | TypeScript <br/>
+Tailwind | SASS | Styled Components <br/>
+MongoDB | SQL <br/>
+Python | Selenium | Pandas <br/>
+Docker | GitHub Actions <br/>
 
 ## Tecnologias Utilizadas
 Este portfólio foi desenvolvido utilizando as seguintes tecnologias:
@@ -47,24 +47,24 @@ Node.js
 #### Instalação
 
 Clone o repositório:
-bash
-Copiar código
-git clone https://github.com/eduardo-hoths/portfolio.git
+```bash
+git clone https://github.com/eduardohoths/portfolio.git
+```
 
 Instale as dependências:
-bash
-Copiar código
+```bash
 cd portfolio
 npm install
+```
 
 Execute o projeto:
-bash
-Copiar código
+```bash
 npm run dev
+```
 O projeto estará disponível no endereço http://localhost:3000.
 
 Contato
 Você pode me encontrar em:
 
-LinkedIn: linkedin.com/in/eduardohoths
+LinkedIn: https://linkedin.com/in/eduardohoths <br/>
 E-mail: eduardo.hoths@gmail.com
