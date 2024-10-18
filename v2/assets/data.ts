@@ -4,7 +4,7 @@ export const experiences = {
     data: [
       {
         role: "Analista de Sistemas",
-        date: "Junho, 2023 - Atualmente",
+        date: "Junho, 2023 - Outubro, 2024",
         description:
           "Na Nulog, criei e mantive o site empresarial, desenvolvendo o design no Figma e implementando o front-end com Next.js, TypeScript e Tailwind. Construi uma API para login e envio de dados de formulários usando Node.js e MongoDB. Configurei ambientes de desenvolvimento e deploy com Docker e automatizei processos com GitHub Actions. Também desenvolvo aplicações de automação de tarefas com Python, utilizando bibliotecas como Selenium e Pandas, e dou suporte aos sistemas da empresa.",
 
@@ -40,7 +40,7 @@ export const experiences = {
     data: [
       {
         role: "システムアナリスト",
-        date: "2023年6月 - 現在",
+        date: "2023年6月 - 2024年10月 ",
         description:
           "Nulogでは、企業のウェブサイトを作成し、Figmaでデザインし、Next.js、TypeScript、Tailwindを使用してフロントエンドを実装しました。Node.jsとMongoDBを使ってログインとデータ送信のAPIを構築し、Dockerで開発およびデプロイ環境を設定し、GitHub Actionsでプロセスを自動化しました。また、Pythonを使用してタスク自動化アプリケーションを開発し、SeleniumやPandasなどのライブラリを利用し、会社のシステムのサポートも行っています。",
         url: "https://nulogistica.com.br/",
@@ -75,7 +75,7 @@ export const experiences = {
     data: [
       {
         role: "Systems Analyst",
-        date: "June 2023 - Present",
+        date: "June 2023 - October 2024",
         description:
           "At Nulog, I created and maintained the corporate website, designing it in Figma and implementing the front-end with Next.js, TypeScript, and Tailwind. I built an API for login and data submission using Node.js and MongoDB. I configured development and deployment environments with Docker and automated processes with GitHub Actions. I also develop task automation applications with Python, using libraries like Selenium and Pandas, and provide support for the company’s systems.",
         url: "https://nulogistica.com.br/",
