@@ -3,10 +3,10 @@ export const experiences = {
     title: "Experiência Profissional",
     data: [
       {
-        role: "Analista de Sistemas",
+        role: "Desenvolvedor Fullstack",
         date: "Junho, 2023 - Outubro, 2024",
         description:
-          "Na Nulog, criei e mantive o site empresarial, desenvolvendo o design no Figma e implementando o front-end com Next.js, TypeScript e Tailwind. Construi uma API para login e envio de dados de formulários usando Node.js e MongoDB. Configurei ambientes de desenvolvimento e deploy com Docker e automatizei processos com GitHub Actions. Também desenvolvo aplicações de automação de tarefas com Python, utilizando bibliotecas como Selenium e Pandas, e dou suporte aos sistemas da empresa.",
+          "Na Nulog, criei e mantive o site empresarial, desenvolvendo o design no Figma e implementando o front-end com Next.js, TypeScript e Tailwind. Construi uma API para login e envio de dados de formulários usando Node.js e MongoDB. Configurei ambientes de desenvolvimento e deploy com Docker e automatizei processos com GitHub Actions. Também desenvolvo aplicações de automação de tarefas com Python, utilizando bibliotecas como Selenium e Pandas.",
 
         url: "https://nulogistica.com.br/",
         company: "Nulog Logística",
@@ -42,7 +42,7 @@ export const experiences = {
         role: "システムアナリスト",
         date: "2023年6月 - 2024年10月 ",
         description:
-          "Nulogでは、企業のウェブサイトを作成し、Figmaでデザインし、Next.js、TypeScript、Tailwindを使用してフロントエンドを実装しました。Node.jsとMongoDBを使ってログインとデータ送信のAPIを構築し、Dockerで開発およびデプロイ環境を設定し、GitHub Actionsでプロセスを自動化しました。また、Pythonを使用してタスク自動化アプリケーションを開発し、SeleniumやPandasなどのライブラリを利用し、会社のシステムのサポートも行っています。",
+          "Nulogでは、企業サイトの作成と保守を担当しました。デザインをFigmaで作成し、Next.js、TypeScript、Tailwindを使用してフロントエンドを実装しました。Node.jsとMongoDBを使ってログインやフォームデータ送信のためのAPIを構築しました。Dockerを使用して開発とデプロイ環境を設定し、GitHub Actionsでプロセスを自動化しました。また、SeleniumやPandasといったライブラリを使用して、Pythonでタスク自動化アプリケーションも開発しています",
         url: "https://nulogistica.com.br/",
         company: "Nulog Logística",
         modality: "対面",

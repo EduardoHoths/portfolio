@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function HomePage() {
   const t = useTranslations("Home");
 
-  const locale = useLocale() as "pt-br" | "en-us" | "jp";
+  const locale = useLocale() as "pt-br" | "en-us";
 
   return (
     <main className="flex flex-col gap-4">

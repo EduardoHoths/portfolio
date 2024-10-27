@@ -31,7 +31,7 @@ function LanguageSelector() {
         >
           <SelectItem value="pt-br" className="hover:opacity-85 transition-all">{t("pt-br")}</SelectItem>
           <SelectItem value="en-us" className="hover:opacity-85 transition-all">{t("en-us")}</SelectItem>
-          <SelectItem value="jp" className="hover:opacity-85 transition-all">{t("jp")}</SelectItem>
+          {/* <SelectItem value="jp" className="hover:opacity-85 transition-all">{t("jp")}</SelectItem> */}
         </SelectContent>
       </Select>
     </div>
