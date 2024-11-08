@@ -4,7 +4,7 @@ export const experiences = {
     data: [
       {
         role: "Desenvolvedor Fullstack",
-        date: "Junho, 2023 - Outubro, 2024",
+        date: "Junho, 2023 - Novembro, 2024",
         description:
           "Na Nulog, criei e mantive o site empresarial, desenvolvendo o design no Figma e implementando o front-end com Next.js, TypeScript e Tailwind. Construi uma API para login e envio de dados de formulários usando Node.js e MongoDB. Configurei ambientes de desenvolvimento e deploy com Docker e automatizei processos com GitHub Actions. Também desenvolvo aplicações de automação de tarefas com Python, utilizando bibliotecas como Selenium e Pandas.",
 
@@ -74,8 +74,8 @@ export const experiences = {
     title: "Professional Experience",
     data: [
       {
-        role: "Systems Analyst",
-        date: "June 2023 - October 2024",
+        role: "Full-Stack Developer",
+        date: "June 2023 - November 2024",
         description:
           "At Nulog, I created and maintained the corporate website, designing it in Figma and implementing the front-end with Next.js, TypeScript, and Tailwind. I built an API for login and data submission using Node.js and MongoDB. I configured development and deployment environments with Docker and automated processes with GitHub Actions. I also develop task automation applications with Python, using libraries like Selenium and Pandas, and provide support for the company’s systems.",
         url: "https://nulogistica.com.br/",
