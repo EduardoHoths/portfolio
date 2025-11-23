@@ -76,6 +76,7 @@ export default function HomePage() {
             width={150}
             height={150}
             alt="image profile"
+            className="rounded-full"
           />
         </div>
       </section>
